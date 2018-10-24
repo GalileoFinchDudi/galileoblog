@@ -7,7 +7,7 @@ module.exports = {
   siteUrl: "https://galileofinch.com",
   pathPrefix: "",
   siteImage: "preview.jpg",
-  siteLanguage: "en",
+  siteLanguage: "Zh",
   // author
   authorName: "Galileo Finch",
   authorTwitterAccount: "Galileo_Dudi",
