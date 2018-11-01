@@ -6,14 +6,11 @@ cover: eberhard-grossgasteiger-1115357-unsplash-cover.png
 
 # nginx https tomcat redirect 成 http 引发400错误
 
-
 **一、https 被redirect成了http**
 
 背景：
 
 目前一号双终端项目并不是全站的https，而是仅在防火墙上配置了https,其架构大致下面这样：
-
- 
 
 ![img](./picture1.png)
 
@@ -35,7 +32,7 @@ cover: eberhard-grossgasteiger-1115357-unsplash-cover.png
 
 ![img](./picture3.png)
 
-不过使用forward(请求转发)方法，地址栏中看到的只有一个地址，比如https://yihaoduozhongduan.com:8088/yhdzd/，服务器返回了login.jsp页面，但浏览器地址栏没有改变。
+不过使用forward(请求转发)方法，地址栏中看到的只有一个地址，比如 https://yihaoduozhongduan.com:8088/yhdzd/ ，服务器返回了login.jsp页面，但浏览器地址栏没有改变。
 
 3. 在响应信息中设置HTTP状态码和location头信息
 
