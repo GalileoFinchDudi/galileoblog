@@ -36,58 +36,58 @@ There are 2 different transformations, "--...-." and "--...--.".
 
 ```java
 public int uniqueMorseRepresentations(String[] words) {
-        HashMap<Character,String> dict = new HashMap();
-        HashSet hashSet = new HashSet();
-        dict.put('a', ".-");
-        dict.put('b', "-...");
-        dict.put('c', "-.-.");
-        dict.put('d', "-..");
-        dict.put('e', ".");
-        dict.put('f', "..-.");
-        dict.put('g', "--.");
-        dict.put('h', "....");
-        dict.put('i', "..");
-        dict.put('j', ".---");
-        dict.put('k', "-.-");
-        dict.put('l', ".-..");
-        dict.put('m', "--");
-        dict.put('n', "-.");
-        dict.put('o', "---");
-        dict.put('p', ".--.");
-        dict.put('q', "--.-");
-        dict.put('r', ".-.");
-        dict.put('s', "...");
-        dict.put('t', "-");
-        dict.put('u', "..-");
-        dict.put('v', "...-");
-        dict.put('w', ".--");
-        dict.put('x', "-..-");
-        dict.put('y', "-.--");
-        dict.put('z', "--..");
-        for(int j=0; j<words.length ; j++ ) {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < words[j].length();i++){
-                sb.append(dict.get(words[j].charAt(i)));
-            }
-            hashSet.add(sb.toString());
+    HashMap<Character,String> dict = new HashMap();
+    HashSet hashSet = new HashSet();
+    dict.put('a', ".-");
+    dict.put('b', "-...");
+    dict.put('c', "-.-.");
+    dict.put('d', "-..");
+    dict.put('e', ".");
+    dict.put('f', "..-.");
+    dict.put('g', "--.");
+    dict.put('h', "....");
+    dict.put('i', "..");
+    dict.put('j', ".---");
+    dict.put('k', "-.-");
+    dict.put('l', ".-..");
+    dict.put('m', "--");
+    dict.put('n', "-.");
+    dict.put('o', "---");
+    dict.put('p', ".--.");
+    dict.put('q', "--.-");
+    dict.put('r', ".-.");
+    dict.put('s', "...");
+    dict.put('t', "-");
+    dict.put('u', "..-");
+    dict.put('v', "...-");
+    dict.put('w', ".--");
+    dict.put('x', "-..-");
+    dict.put('y', "-.--");
+    dict.put('z', "--..");
+    for(int j=0; j<words.length ; j++ ) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < words[j].length();i++){
+            sb.append(dict.get(words[j].charAt(i)));
         }
-        return hashSet.size();
+        hashSet.add(sb.toString());
     }
+    return hashSet.size();
+}
 ```
 
 ### 第二种解法：先将码表初始化成String数组(已排好顺序a,b,...,z)，同理也用到HashSet，计算字母c-char('a')得到每个字母的类hash值拼接成的一个串，取hashSet.size
 
 ```java
 public int uniqueMorseRepresentations(String[] words) {
-         String[] d = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
-        HashSet<String> s = new HashSet<>();
-        for (String word : words) {
-            StringBuilder sb = new StringBuilder();
-            for (char c : word.toCharArray()) sb.append(d[c - 'a']);
-            s.add(sb.toString());
-        }
-        return s.size();
-    }
+  String[] d = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
+  HashSet<String> s = new HashSet<>();
+  for (String word : words) {
+      StringBuilder sb = new StringBuilder();
+      for (char c : word.toCharArray()) sb.append(d[c - 'a']);
+      s.add(sb.toString());
+  }
+  return s.size();
+}
 ```
 
 # Review
@@ -135,3 +135,14 @@ Great advice.
 
 # Share
 
+美国最著名的物理学家、诺贝尔奖得主费曼，小时候与一个号称无所不知的孩子，一起出去玩。他后来回忆了两个人的一段对话。
+
+> 他对我说："看那只鸟？ 那是什么鸟？" 
+> 
+> 我说："我一点也不知道它是一只什么样的鸟。" 
+> 
+> 他说："这是一只棕色喉咙画眉。 你父亲没教你吗？" 
+> 
+> 事实恰恰相反。 他[费曼的父亲]已经教过我："看那只鸟？"他说。 "这是斯宾塞的鸣鸟。"（我知道他不知道真名。）"好吧，在意大利语中，这是一个Chutto Lapittida 。 在葡萄牙语中，它是一个Bom da Peida ...你可以在世界上所有语言中知道那只鸟的名字，但是当你说完后，你对这只鸟一无所知！ 你只会知道不同地方的人类怎么叫这只鸟。 所以，让我们看一下这只鸟，看看它在做什么 - 这就是最重要的。"
+> 
+> 所以，我很早就知道了，知道某事物的名字和知道它是什么之间的区别。
