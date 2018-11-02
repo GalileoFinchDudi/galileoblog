@@ -1,5 +1,6 @@
 ---
 title: About
+menuTitle: About
 ---
 
 Hello, My name is **Galileo Finch**.
