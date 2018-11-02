@@ -50,6 +50,6 @@ cover: eberhard-grossgasteiger-1115357-unsplash-cover.png
 
 参考链接：
 
- http://www.javatang.com/archives/2018/01/10/22132246.html#NginxX-Forwarded-Protohttp://rensanning.iteye.com/blog/2337766https://blog.csdn.net/YangFanJ/article/details/72236655
+http://www.javatang.com/archives/2018/01/10/22132246.html#NginxX-Forwarded-Protohttp://rensanning.iteye.com/blog/2337766https://blog.csdn.net/YangFanJ/article/details/72236655
 
 https://blog.csdn.net/zhuye1992/article/details/80496151
