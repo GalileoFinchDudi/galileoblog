@@ -1,6 +1,6 @@
 ---
-title: ARTS 2018-11-02
-subTitle: ARTS per week
+title: ARTS 1
+subTitle: arts
 category: "arts"
 cover: rawpixel-570911-unsplash.jpg
 ---
