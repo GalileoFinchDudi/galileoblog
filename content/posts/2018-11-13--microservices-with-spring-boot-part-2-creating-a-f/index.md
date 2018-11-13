@@ -5,6 +5,12 @@ category: "microservice"
 cover: rawpixel-678089-unsplash.jpg
 ---
 
+> 参考：
+>
+> https://dzone.com/articles/microservices-with-spring-boot-part-2-creating-a-f
+>
+>http://tengj.top/categories/Spring-Boot%E5%B9%B2%E8%B4%A7%E7%B3%BB%E5%88%97/
+
 # Spring Boot的微服务 part2
 
 让我们开始学习微服务和微服务架构的基础知识。我们还将开始研究使用Spring Boot的微服务的基本实现。我们将创建一些微服务，并使用Eureka命名服务器和功能区进行客户端负载平衡，让它们相互通信。
@@ -61,7 +67,7 @@ cover: rawpixel-678089-unsplash.jpg
 - 一个称手的IDE，这里我们使用IDEA
 - JDK1.8+
 
-我的GitHub存储库包含完整的Maven项目以及所有代码示例。
+我的[GitHub存储库](https://github.com/GalileoFinchDudi/spring-boot-microservice-forex-service)包含完整的Maven项目以及所有代码示例。
 
 ## 使用Spring Initializr进行初始化
 
