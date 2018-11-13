@@ -1,6 +1,6 @@
 ---
 title: yum镜像源问题
-subtitle: yum 镜像源问题导致下载相关包失败
+subTitle: yum 镜像源问题导致下载相关包失败
 category: "yum"
 cover: ishan-seefromthesky-618625-unsplash.jpg
 ---

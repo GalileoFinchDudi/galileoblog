@@ -1,6 +1,6 @@
 ---
 title: Spring Boot的微服务 part1
-subtitle: 使用Spring Boot、 Spring Cloud搭建微服务架子 第一节
+subTitle: 使用Spring Boot、 Spring Cloud搭建微服务架子 第一节
 category: "microservice"
 cover: daniel-kainz-55304-unsplash.jpg
 ---
