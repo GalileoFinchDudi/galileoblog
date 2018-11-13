@@ -31,16 +31,6 @@ cover: daniel-kainz-55304-unsplash.jpg
 - 如何实现命名服务器（Eureka命名服务器）。
 - 如何将微服务与命名服务器和功能区连接。
 
-## 资源概述
-
-在本指南中，我们将使用正确的URI和HTTP方法创建一个公开三种服务的学生资源：
-
-- 查询所有学生 - @GetMapping("/students")
-- 获取学生的详细信息 - @GetMapping("/students/{id}")
-- 删除学生 - @DeleteMapping("/students/{id}")
-- 创建一个新学生 - @PostMapping("/students")
-- 更新学生详细信息 - @PutMapping("/students/{id}")
-
 ## 微服务概述
 
 在本系列文章中，我们将创建两个微服务：
